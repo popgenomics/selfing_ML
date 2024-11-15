@@ -23,7 +23,7 @@ python3 selfing_ML_sequences.py inputFile speciesName > outputFile
 python3 selfing_ML_sequences.py Hibiscus_populations.fasta Hibiscus_laevis > selfing_Hibiscus_Hibiscus_laevis.txt
 ```
   
-### Input File Format  
+### Input File Format  
 The input file is a multifasta file where each sequence ID follows this format:  
 ```shell
 >{locus name}|{species name}|{individual name}|{Allele_1 or Allele_2}
@@ -62,4 +62,21 @@ The output file is in tidy format, making it easy to process with R's tidyverse 
 | Hibiscus_laevis  | L41        | 0.25         | -555.857834600882   |
 | Hibiscus_laevis  | L41        | 0.3          | -549.6628670156902  |
 | Hibiscus_laevis  | L41        | 0.35         | -543.661510900775   |
+  
+### Plotting the Results  
+To graphically represent the results, you can use the plot_selfing_sequences.R script.  
+  
+#### Grant Execution Permissions  
+```bash
+chmod +x plot_selfing_sequences.R
+```
+
+#### Running the R Script
+```bash
+Rscript plot_selfing_sequences.R selfing_Hibiscus_Hibiscus_laevis.txt
+```
+
+This script will generate a PDF file with the plot:  
+
+![alt text](https://github.com/popgenomics/selfing_ML/selfing_Hibiscus_Hibiscus_laevis.png)
  
