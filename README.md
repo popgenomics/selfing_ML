@@ -78,5 +78,5 @@ Rscript plot_selfing_sequences.R selfing_Hibiscus_Hibiscus_laevis.txt
 
 This script will generate a PDF file with the plot:  
 
-![alt text](https://github.com/popgenomics/selfing_ML/selfing_Hibiscus_Hibiscus_laevis.png)
+![alt text](https://github.com/popgenomics/selfing_ML/blob/main/selfing_Hibiscus_Hibiscus_laevis.png)
  
