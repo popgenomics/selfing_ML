@@ -45,4 +45,21 @@ CTTTCTATCACTGTTTCGTATGNGGGGCAGTAGAAGTATGCTGCCGAGTACCTTTCACTCTCTTGGTTGGCAATCACTCG
 CTTTCTATCACTGTTTCGTATGNGGGGCAGTAGAAGTATGCTGCCGAGTACCTTTCACTCTCTTGGTTGGCAATCACTCGGTGTGT
 ```
 
+#### Output File Format  
+The output file is in tidy format, making it easy to process with R's tidyverse package. It contains four columns:  
+1. Species name
+2. Individual name
+3. Explored selfing rate values (default: a grid of 21 points between 0 and 1)
+4. Log likelihood of the selfing rate
+
+| Species          | Individual | Selfing Rate | Log-Likelihood      |
+|------------------|------------|--------------|---------------------|
+| Hibiscus_laevis  | L41        | 0.0          | -588.6670054354053  |
+| Hibiscus_laevis  | L41        | 0.05         | -581.9224496416417  |
+| Hibiscus_laevis  | L41        | 0.1          | -575.2568833051852  |
+| Hibiscus_laevis  | L41        | 0.15         | -568.6800090923874  |
+| Hibiscus_laevis  | L41        | 0.2          | -562.2066187379005  |
+| Hibiscus_laevis  | L41        | 0.25         | -555.857834600882   |
+| Hibiscus_laevis  | L41        | 0.3          | -549.6628670156902  |
+| Hibiscus_laevis  | L41        | 0.35         | -543.661510900775   |
  
